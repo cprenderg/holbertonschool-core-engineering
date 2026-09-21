@@ -12,4 +12,4 @@ while letter < 123:
         continue
     output += chr(letter)
     letter += 1
-print(output)
+print(f"{output}")
