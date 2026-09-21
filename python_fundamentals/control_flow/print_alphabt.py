@@ -11,7 +11,7 @@ while letter:
         continue
     if letter == 123:
         letter = 10
-    print(chr(letter), end="")
+    print(f"{letter:c}", end="")
     if letter == 10:
         break
     letter += 1
