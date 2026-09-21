@@ -11,7 +11,7 @@ while letter:
         continue
     if letter == 123:
         letter = 10
-    print(f"{letter:c}", end="")
+    print(f"{:c}".format(letter), end="")
     if letter == 10:
         break
     letter += 1
