@@ -3,5 +3,5 @@
 num = 0
 
 while num < 99:
-    print(f"{num} = 0x{num:x}")
+    print("{} = 0x{:x}".format(num,num))
     num += 1
