@@ -9,5 +9,3 @@ def uppercase(str):
             letter = ord(c)
         print("{:c}".format(letter), end="")
     print("")
-
-uppercase("TeSt")
