@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+def pow(a, b):
+    c = a
+    if b == 0:
+        return 1
+    for x in range(1, b):
+        c *= a
+    return c
