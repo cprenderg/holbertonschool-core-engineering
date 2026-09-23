@@ -14,5 +14,5 @@ def print_matrix_integer(matrix=[[]]):
                 print("{:d} ".format(matrix[i][j]), end="")
             j += 1
         i += 1
-    if i == 0 and j == 0:
+    if i == 1 and j == 1 and k == 1:
         print("")
