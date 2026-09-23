@@ -30,4 +30,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
     if arr:
         return (arr[0], arr[1])
     return (0, 0)
-
