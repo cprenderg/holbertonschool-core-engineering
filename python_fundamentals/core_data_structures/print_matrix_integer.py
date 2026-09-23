@@ -2,7 +2,7 @@
 
 def print_matrix_integer(matrix=[[]]):
     if not matrix:
-        print("")
+        print(" ")
     else:
         i = 0
         k = 0
