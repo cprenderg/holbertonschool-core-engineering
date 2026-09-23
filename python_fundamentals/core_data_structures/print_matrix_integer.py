@@ -2,10 +2,13 @@
 
 def print_matrix_integer(matrix=[[]]):
     i = 0
+    k = 0
+    for column in matrix[0]:
+        k += 1
     for row in matrix:
         j = 0
-        while j < 3:
-            if j == 2:
+        while j < k:
+            if j == k - 1:
                 print("{:d}".format(matrix[i][j]))
             else:
                 print("{:d} ".format(matrix[i][j]), end="")
