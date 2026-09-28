@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+"""Module that creates a square object"""
+
+
+class Square:
+    """Insides of a square class"""
+
+    def __init__(self, size=0, position=(0, 0)):
+        self.size = size
+        self.position = position
+
+    def area(self):
+        return self.__size * self.__size
+
+    @property
+    def size(self):
+        return self.__size
+
+    @size.setter
+    def size(self, size):
+        try:
+            if type(size) is not int:
+                raise TypeError
+            elif size < 0:
+                raise ValueError
+            else:
+                self.__size = size
+        except TypeError:
+            raise TypeError("size must be an integer")
+        except ValueError:
+            raise ValueError("size must be >= 0")
+
+    def my_print(self):
+        if self.__size == 0:
+            print("")
+        else:
+            i = 0
+            while i < self.__size:
+                j = 0
+                while j < self.__size:
+                    print("#", end="")
+                    j += 1
+                print("")
+                i += 1
+
+    @property
+    def position(self):
+        return self.__position
+
+    @position.setter
+    def position(self, value):
+        try:
+            if isinstance(value, tuple) and value[0] >= 0 and value[1] >= 0:
+                self.__position = value
+            else:
+                raise TypeError
+        except TypeError:
+            raise TypeError("position must be a tuple of 2 positive integers")
+
+    def __str__(self):
+        if self.__size == 0:
+            return ""
+        else:
+            string = ""
+            i = 0
+            while i < self.position[1]:
+                string += "\n"
+                i += 1
+            i = 0
+            while i < self.__size:
+                j = 0
+                while j < self.position[0]:
+                    string += " "
+                    j += 1
+                j = 0
+                while j < self.__size:
+                    string += "#"
+                    j += 1
+                if i != self.__size - 1:
+                    string += "\n"
+                i += 1
+            return string
