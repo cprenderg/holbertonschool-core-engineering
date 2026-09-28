@@ -3,11 +3,12 @@
 
 
 class Square:
+    """Insides of a square class"""
+
     def __init__(self, size):
-        """Insides of a square class"""
         try:
             self.__size = size
         except TypeError:
-            TypeError("size must be an integer")
+            raise TypeError("size must be an integer")
         except ValueError:
-            ValueError("size must be >= 0")
+            raise ValueError("size must be >= 0")
