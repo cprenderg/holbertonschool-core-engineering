@@ -5,7 +5,7 @@
 class Square:
     """Insides of a square class"""
 
-    def __init__(self, size):
+    def __init__(self, size=0):
         try:
             self.__size = size
         except TypeError:
