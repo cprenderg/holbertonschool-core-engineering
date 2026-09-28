@@ -56,6 +56,8 @@ class Square:
                 raise TypeError
         except TypeError:
             raise TypeError("position must be a tuple of 2 positive integers")
+        except IndexError:
+            raise IndexError("position must be a tuple of 2 positive integers")
 
     def __str__(self):
         if self.__size == 0:
