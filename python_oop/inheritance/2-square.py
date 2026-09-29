@@ -14,15 +14,4 @@ class Square(Rectangle):
         super().__init__(self.__size, self.__size)
 
     def __str__(self):
-        if self.__size == 0:
-            return ""
-        string = ""
-        i = 0
-        while i < self.__size:
-            j = 0
-            while j < self.__size:
-                string += "#"
-                j += 1
-            string += "\n"
-            i += 1
-        return string
+        return "[Square] {:d}/{:d}".format(self.__size, self.__size)
