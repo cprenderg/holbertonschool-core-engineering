@@ -2,7 +2,7 @@
 """Module that contains rectangle class"""
 
 
-from base_geometry import BaseGeometry
+BaseGeometry = __import__('base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
