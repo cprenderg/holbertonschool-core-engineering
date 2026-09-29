@@ -26,6 +26,3 @@ class Square(Rectangle):
             string += "\n"
             i += 1
         return string
-
-    def my_print(self):
-        print(self)
