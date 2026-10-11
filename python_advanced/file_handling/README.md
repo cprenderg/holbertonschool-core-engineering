@@ -1,6 +1,2 @@
-#!/usr/bin/env python3
-
-def read_file(filename=""):
-    with open(filename) as f:
-        read_data = f.read()
-    return f.closed
+# Python - Python Advanced
+This directory contains tasks from the "Python - File Handling" module at Holberton.
